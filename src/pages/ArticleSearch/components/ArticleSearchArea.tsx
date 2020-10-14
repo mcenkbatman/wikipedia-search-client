@@ -16,7 +16,7 @@ const ArticleSearchArea: React.FC<ArticleSearchAreaProps> = ({ loading = false, 
 
   useEffect(() => {
     onSearch(debouncedSearch);
-  }, [debouncedSearch])
+  }, [debouncedSearch, onSearch])
 
   return (
     <Search placeholder="Start typing to search for a wikipedia article (at least 3 characters)" loading={loading} onChange={(e) => setSearch(e.target.value)} />
