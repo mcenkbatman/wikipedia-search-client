@@ -6,9 +6,13 @@ import {
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import { config } from './config';
+import { resolvers } from './resolvers';
 
 const client = new ApolloClient({
   cache: new InMemoryCache(),
+  uri: config.apollo.baseURL,
+  resolvers,
 });
 
 
