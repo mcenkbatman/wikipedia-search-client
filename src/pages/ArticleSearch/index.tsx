@@ -41,23 +41,23 @@ const ArticleSearchPage: React.FC<ArticleSearchPageProps> = ({ }) => {
 
 
   const handleSearch = (searchText: string) => {
-    if (searchText.trim().length <= 3) {
+    if (searchText.trim().length < 3) {
       setIsValidInput(false);
       return;
     }
     setIsValidInput(true);
-    searchArticle({ variables: { page: searchText } })
+    searchArticle({ variables: { page: searchText.trim() } })
   }
 
   return (
     <Layout>
-      <Header style={{ top: 0 }}>
+      <Header>
         <ArticleSearchArea onSearch={handleSearch} loading={loading}/>
       </Header>
       <Content>
-        {isValidInput && <ArticleSearchResult article={data.searchArticle.parse} />}
+        {isValidInput && <ArticleSearchResult loading={loading} article={data.searchArticle.parse} />}
       </Content>
-      <Footer style={{ position: 'fixed', bottom: 0 }}>
+      <Footer style={{ position: 'fixed', bottom: 0, width: '100%', textAlign: 'center' }}>
         <ArticleSearchFooter />
       </Footer>
     </Layout>

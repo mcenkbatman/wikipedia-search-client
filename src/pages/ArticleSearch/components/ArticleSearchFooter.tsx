@@ -7,7 +7,7 @@ interface ArticleSearchFooterProps {
 const ArticleSearchFooter: React.FC<ArticleSearchFooterProps> = ({ }) => {
 
   return (
-    <p>Search Footer</p>
+    <p>Wikipedia Search Client by CenkBatman</p>
   );
 }
 
