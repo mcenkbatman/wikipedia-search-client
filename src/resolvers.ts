@@ -1,5 +1,6 @@
 import { ApolloCache, Resolvers } from '@apollo/client';
 
+
 type ResolverFn = (
   parent: any,
   args: any,
@@ -13,4 +14,6 @@ interface ResolverMap {
 interface AppResolvers extends Resolvers {
 }
 
-export const resolvers: AppResolvers = {};
+export const resolvers: AppResolvers = {
+  
+};
