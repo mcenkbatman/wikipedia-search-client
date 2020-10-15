@@ -3,7 +3,7 @@ This repository is the react and apollo-client client side of the project to tes
 
 It only has one page to search for wikipedia articles
 
-## Features
+# Features
 - debounced search to decrease api calls
 - loading ui feedbacks with skeletons
 - simple ui
@@ -15,5 +15,5 @@ At the time, this client is tried to be hosted on https://wikipedia-search-clien
 
 If you want to try this on your local network you will fail to download graph schema because apollo_key is not committed in the source. So please reach out to me in case you want to locally try this.
 
-!(web client usage gif)(http://www.giphy.com/gifs/PxScpuWsBna1g8jme6)
+(![web client usage gif](usage.gif))
 
