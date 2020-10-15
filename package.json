@@ -23,7 +23,7 @@
     "eject": "react-scripts eject",
     "run:ios-demo": "npx artillery run apollo-internal-demos/ios-workload.yml",
     "codegen": "apollo client:codegen --target typescript --watch",
-    "heroku-postbuild": "apollo client:codegen --target typescript --watch"
+    "heroku-postbuild": "apollo client:codegen --target typescript"
   },
   "eslintConfig": {
     "extends": "react-app"
